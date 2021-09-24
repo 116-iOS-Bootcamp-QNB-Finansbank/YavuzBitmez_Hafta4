@@ -919,6 +919,26 @@
                                             <segue destination="tfh-Yo-5LC" kind="show" id="DkU-Ee-0NE"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="lec-Io-cNP" style="IBUITableViewCellStyleDefault" id="ESm-Pz-kd1">
+                                        <rect key="frame" x="0.0" y="550" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ESm-Pz-kd1" id="WCX-wq-thw">
+                                            <rect key="frame" x="0.0" y="0.0" width="384.5" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Hero" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lec-Io-cNP">
+                                                    <rect key="frame" x="20" y="0.0" width="356.5" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="R51-79-G9O" kind="show" id="FZf-Wx-aRF"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -1058,6 +1078,66 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tow-Kk-8RS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="395.6521739130435" y="711.83035714285711"/>
+        </scene>
+        <!--Hero Detail View Controller-->
+        <scene sceneID="1Rs-QH-vhp">
+            <objects>
+                <viewController id="R51-79-G9O" customClass="HeroDetailViewController" customModule="BasicUIComponents" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0dw-BD-c42">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aol-28-BZK">
+                                <rect key="frame" x="0.0" y="88" width="414" height="128"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Uj8-y9-ZFS"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xc5-Wl-GJR">
+                                <rect key="frame" x="0.0" y="216" width="414" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="1dZ-Ka-YTr"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ObO-kc-I8M">
+                                <rect key="frame" x="0.0" y="394" width="414" height="50"/>
+                                <color key="backgroundColor" red="0.80520128499999999" green="1" blue="0.536861747" alpha="0.74702983000000001" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="rvQ-Ak-uYT"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3yb-rd-Ngk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Aol-28-BZK" firstAttribute="leading" secondItem="3yb-rd-Ngk" secondAttribute="leading" id="D8g-di-2WM"/>
+                            <constraint firstItem="Aol-28-BZK" firstAttribute="top" secondItem="3yb-rd-Ngk" secondAttribute="top" id="EKP-xb-Lwh"/>
+                            <constraint firstItem="Xc5-Wl-GJR" firstAttribute="top" secondItem="Aol-28-BZK" secondAttribute="bottom" id="fQZ-rk-cKg"/>
+                            <constraint firstItem="3yb-rd-Ngk" firstAttribute="trailing" secondItem="Xc5-Wl-GJR" secondAttribute="trailing" id="fU2-dY-fA9"/>
+                            <constraint firstItem="3yb-rd-Ngk" firstAttribute="trailing" secondItem="Aol-28-BZK" secondAttribute="trailing" id="oqW-F7-Msl"/>
+                            <constraint firstItem="3yb-rd-Ngk" firstAttribute="trailing" secondItem="ObO-kc-I8M" secondAttribute="trailing" id="oxB-rt-phk"/>
+                            <constraint firstItem="ObO-kc-I8M" firstAttribute="top" secondItem="Xc5-Wl-GJR" secondAttribute="bottom" constant="50" id="u87-9C-pgk"/>
+                            <constraint firstItem="Xc5-Wl-GJR" firstAttribute="leading" secondItem="3yb-rd-Ngk" secondAttribute="leading" id="uzx-sq-2i0"/>
+                            <constraint firstItem="ObO-kc-I8M" firstAttribute="leading" secondItem="3yb-rd-Ngk" secondAttribute="leading" id="zzi-aM-1dI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="q2Q-9k-CUi"/>
+                    <connections>
+                        <outlet property="dismissButton" destination="ObO-kc-I8M" id="x7b-6u-mlZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OTy-Rh-g0q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2897.1014492753625" y="-767.41071428571422"/>
         </scene>
         <!--Core Data View Controller-->
         <scene sceneID="lSX-fn-0Ch">
