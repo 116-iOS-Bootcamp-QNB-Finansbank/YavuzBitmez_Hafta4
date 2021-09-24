@@ -11,17 +11,13 @@ import WebKit
 class WebViewContainerViewController: UIViewController {
 
     @IBOutlet weak var webView: WKWebView!
+    private var activityIndicatorView: UIActivityIndicatorView!
+    
+    var urlString: String!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad() // html content gosterelim font ve font buyuklugunu css ile degistirelim
-
-        // Do any additional setup after loading the view.
-        
-//        let preferences = WKPreferences()
-//        preferences.javaScriptEnabled = true
-//
-//        let configuration = WKWebViewConfiguration()
-//        configuration.preferences = preferences
         
         activityIndicatorView = UIActivityIndicatorView(style: .medium)
         activityIndicatorView.color = .red
@@ -43,18 +39,6 @@ class WebViewContainerViewController: UIViewController {
         webView.uiDelegate = self
         webView.navigationDelegate = self
     }
-    
-    private var activityIndicatorView: UIActivityIndicatorView!
-    
-    var urlString: String!
-    
-//    override class func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-//        if keyPath == "loading" {
-//            if webView.isLoading {
-//
-//            }
-//        }
-//    }
 
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         if keyPath == "loading" {
@@ -67,10 +51,28 @@ class WebViewContainerViewController: UIViewController {
             activityIndicatorView.isHidden = !webView.isLoading
         }
     }
-    @IBAction func reloadButtonTapped(_ sender: UIButton) {
-        webView.reload()
+    @IBAction func toolBarItems(_ sender: UIBarButtonItem) {
+        //Webview bir gerideki sayfaya gönderir.
+        if sender.tag == 1 {
+            if webView.canGoBack {
+                webView.goBack()
+            }
+        //Webview bir sonraki sayfaya gönderir.
+        }else if sender.tag == 2 {
+            if webView.canGoForward {
+                webView.goForward()
+            }
+        //Webview safaride açar.
+        }else if sender.tag == 3 {
+            UIApplication.shared.openURL(self.webView.url!)
+        //Webview sayfasını yeniler.
+        }else {
+            webView.reload()
+        }
     }
 }
+
+
 
 extension WebViewContainerViewController: WKUIDelegate {
     

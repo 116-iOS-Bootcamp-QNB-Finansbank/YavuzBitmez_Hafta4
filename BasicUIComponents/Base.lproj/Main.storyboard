@@ -1133,27 +1133,47 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="heC-Vc-bzu">
-                                <rect key="frame" x="362" y="842" width="36" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="eDE-RQ-A1V"/>
-                                    <constraint firstAttribute="width" constant="36" id="sFo-zl-86N"/>
-                                </constraints>
-                                <state key="normal" image="arrow.clockwise" catalog="system"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FTa-ii-nN0">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <items>
+                                    <barButtonItem tag="1" title="Back" id="Cn6-76-hKx">
+                                        <connections>
+                                            <action selector="toolBarItems:" destination="nLb-O3-QhO" id="Xka-hI-zed"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem tag="2" title="Next" id="KCD-CI-tgB">
+                                        <connections>
+                                            <action selector="toolBarItems:" destination="nLb-O3-QhO" id="yuu-k8-s0b"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="x8r-R6-agK"/>
+                                    <barButtonItem tag="3" title="Item" image="safari" catalog="system" id="D4r-uc-9sj" userLabel="Safari">
+                                        <connections>
+                                            <action selector="toolBarItems:" destination="nLb-O3-QhO" id="mlo-7c-aK6"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="GVk-uq-1U4"/>
+                                    <barButtonItem tag="4" style="plain" systemItem="refresh" id="Zdf-KP-BtJ">
+                                        <connections>
+                                            <action selector="toolBarItems:" destination="nLb-O3-QhO" id="uYQ-0o-8xq"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
                                 <connections>
-                                    <action selector="reloadButtonTapped:" destination="nLb-O3-QhO" eventType="touchUpInside" id="bX6-uD-cch"/>
+                                    <outlet property="delegate" destination="nLb-O3-QhO" id="Agq-Di-fK9"/>
                                 </connections>
-                            </button>
+                            </toolbar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jQr-r8-1ow"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="FTa-ii-nN0" firstAttribute="trailing" secondItem="jQr-r8-1ow" secondAttribute="trailing" id="M0x-jC-LMY"/>
                             <constraint firstItem="jQr-r8-1ow" firstAttribute="bottom" secondItem="Lyh-2d-nYr" secondAttribute="bottom" id="ZWd-Nc-WCh"/>
                             <constraint firstItem="Lyh-2d-nYr" firstAttribute="top" secondItem="jQr-r8-1ow" secondAttribute="top" id="c5Q-zs-gQT"/>
-                            <constraint firstItem="jQr-r8-1ow" firstAttribute="trailing" secondItem="heC-Vc-bzu" secondAttribute="trailing" constant="16" id="gXi-gy-ENR"/>
-                            <constraint firstItem="heC-Vc-bzu" firstAttribute="bottom" secondItem="jQr-r8-1ow" secondAttribute="bottom" constant="16" id="hPQ-hI-d6w"/>
+                            <constraint firstItem="FTa-ii-nN0" firstAttribute="leading" secondItem="jQr-r8-1ow" secondAttribute="leading" id="gWV-4Y-su2"/>
                             <constraint firstItem="jQr-r8-1ow" firstAttribute="trailing" secondItem="Lyh-2d-nYr" secondAttribute="trailing" id="hPo-P1-eu9"/>
                             <constraint firstItem="Lyh-2d-nYr" firstAttribute="leading" secondItem="jQr-r8-1ow" secondAttribute="leading" id="skA-o1-WIg"/>
+                            <constraint firstItem="jQr-r8-1ow" firstAttribute="bottom" secondItem="FTa-ii-nN0" secondAttribute="bottom" id="xLT-EY-YZP"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wHN-UU-Ov4"/>
@@ -1167,7 +1187,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="arrow.clockwise" catalog="system" width="115" height="128"/>
+        <image name="safari" catalog="system" width="128" height="121"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
