@@ -34,13 +34,26 @@ class MapViewController: UIViewController {
         switch locationManager.authorizationStatus {
         case .authorizedAlways, .authorizedWhenInUse:
             locationManager.requestLocation()
-        case .denied, .restricted:
+        case .denied, .restricted:showLocationPermissionPopup()
             break // Odev 2 burada settings'e yonlendirmek uzere bir popup gosterip. popup action'inda settingsi actiralim.
         case .notDetermined:
             locationManager.requestWhenInUseAuthorization()
         @unknown default:
             fatalError()
         }
+    }
+    func showLocationPermissionPopup(){
+        let alert = UIAlertController(title: "Görünüyorki konum iznini kabul etmemişsiniz.",
+                                     message: "Lütfen konumunuzu paylaşın. ", preferredStyle: .actionSheet)
+        alert.addAction(UIAlertAction(title: "Tamam", style: .default, handler: { action in
+            switch action.style {
+            case.cancel:print("Cancel")
+            case.destructive:print("destructive")//Uygulamanın ayarlar sayfasını açar
+            default:UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
+            }
+        }))
+        self.present(alert, animated: true, completion: nil)
+        
     }
 
     @objc func handleLongGesture(_ gestureRecognizer: UILongPressGestureRecognizer) {
