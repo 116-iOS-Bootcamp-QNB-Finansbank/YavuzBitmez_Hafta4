@@ -7,76 +7,193 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3AAC917005DAC6260E7DAF54041E33A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		3F85A523EECD6979087FA45AF91ADA1E /* Pods-BasicUIComponentsTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB92EC0FF88C7EB6040394071C52EEBA /* Pods-BasicUIComponentsTests-dummy.m */; };
-		4439FBED39C5CCDE70C0B15DC0C88728 /* Pods-BasicUIComponents-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F294545F95A6FFFC90136CCF7E9A986 /* Pods-BasicUIComponents-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		585A234196BA817085C0E86EE302B93C /* Pods-BasicUIComponents-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B4393F59BC0CCA448AE94981BE1F58 /* Pods-BasicUIComponents-dummy.m */; };
-		7254C52553E07395D12C0E16F4C3D747 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		ABDFCA8BDEC56BB86B6F4D45BEBF85FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		CE4C29C95D3D2A2431C76965789BFA9B /* Pods-BasicUIComponents-BasicUIComponentsUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 09A5795FC576C17E010C6D0903B275BD /* Pods-BasicUIComponents-BasicUIComponentsUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3641C2A211205BFF4EFF31A4FD7B157 /* Pods-BasicUIComponentsTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 41E784AA1165AADBFC366F7E08C7FF58 /* Pods-BasicUIComponentsTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E33318299173F1DCB0AE26C2A328CE88 /* Pods-BasicUIComponents-BasicUIComponentsUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A9BA574B830851AFA128D4A0C77D1E2E /* Pods-BasicUIComponents-BasicUIComponentsUITests-dummy.m */; };
+		022C443B103C1212789C2CD34B62660E /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95568154064CE960195D45B95A17D3E7 /* CoreMedia.framework */; };
+		085AFCB4D71063724F278021DA822198 /* CAMediaTimingFunction+Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC77C49D2AD96C19F55BAA2870E24F80 /* CAMediaTimingFunction+Hero.swift */; };
+		0B3A9B0F3496EEA3E2E0DE59E6DB49DC /* Hero-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D5226DC848D5183910F0BDCA44369141 /* Hero-dummy.m */; };
+		0DDD24DFD337E152787B013BA4DCCD23 /* DispatchQueue+Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF328D6DFA4B2DE9F33AB7FE01D17F29 /* DispatchQueue+Hero.swift */; };
+		0F3D8947B1E6926316A24BE91FEA2CF8 /* HeroModifier+HeroStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FD919A10138BB7DF8B46DC24C6AF4C /* HeroModifier+HeroStringConvertible.swift */; };
+		2253F9883DE686852CC6DA6E3EFAF08B /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C7148DF5C628FA9BF9B8433BB75E2A /* SwiftSupport.swift */; };
+		2505D7C1BD283BA7A830422E794ED894 /* HeroTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E394EF34240B2953C1C891CD9F749 /* HeroTransition.swift */; };
+		2F3427251D6056AA646ADED026182ADB /* HeroViewPropertyViewContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51C5CF3EB3F62A2CAFABA0D8E8D9EC8 /* HeroViewPropertyViewContext.swift */; };
+		305A936F60547735F12FDD914EF1353A /* SourcePreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640DAA292A8E3E1D3C34F25C2D716D1 /* SourcePreprocessor.swift */; };
+		32B5846E4ADF469791BF1B7F9A1CAC5E /* CALayer+Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21D76D27E27C94F70433CB61319E522 /* CALayer+Hero.swift */; };
+		32C3EA12C84BD849278FD9BF7C494500 /* HeroTransition+UINavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D35608583606E2C3EC7B5BD6B7F49A /* HeroTransition+UINavigationControllerDelegate.swift */; };
+		34401EE6A3FF48CE7D4E0152208ECF93 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD9AC0426072933256DCBD071CD50BA /* UIKit.framework */; };
+		367E21EEFB329A9FD356A6185D082603 /* BasePreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3473B500A32B2D92091550F5E56ABC69 /* BasePreprocessor.swift */; };
+		36F163200D6A41005B555B38013A214A /* CascadePreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DEF8139E6EEB34AB7105D9FF038093 /* CascadePreprocessor.swift */; };
+		3955A815007C657E4F5C73F4AA8D17DA /* Locale+Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE9AC7CD2302F653813CA03B020885A /* Locale+Hero.swift */; };
+		397098FDB2057B6D501A3876652017F6 /* UIView+Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936E3CE1667824D9A38E0C7F204D490C /* UIView+Hero.swift */; };
+		3F85A523EECD6979087FA45AF91ADA1E /* Pods-BasicUIComponentsTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC94BE8B0514339DCD8B805CCF9E62E /* Pods-BasicUIComponentsTests-dummy.m */; };
+		4060F0F631FE2C10931BF78EC656009C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B4A357A9E84FBAC4505EFF2873D26B /* Foundation.framework */; };
+		46D70D2D41573BDE3CA01E760CFA56B1 /* Pods-BasicUIComponents-BasicUIComponentsUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C0F1F2211B6619B3CA4F1F287F5CA9 /* Pods-BasicUIComponents-BasicUIComponentsUITests-dummy.m */; };
+		4F7F8AE43DF1AB79674EB6510C6E44E5 /* Hero-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C2152E389D390484545054D8C7104DC0 /* Hero-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		507BA0125ABD719B27A9CA86184465CD /* HeroTransition+Complete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF2128481F016D24960B5FEC0A58A3D /* HeroTransition+Complete.swift */; };
+		52F1DFEC50925F25DAE919FAEFBFC00B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8C830FF7C3F0EB792F7F0D41B08BE65 /* QuartzCore.framework */; };
+		5A5E383191845E68FB09FDA1FEFD1CDE /* Pods-BasicUIComponents-BasicUIComponentsUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 31DCBA147E4AE46CD41EA9FF93C301E5 /* Pods-BasicUIComponents-BasicUIComponentsUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5ED12CA47F6B502F4CAD49243ED32071 /* HeroViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC876CA818409A56658030F26FA0F37 /* HeroViewControllerDelegate.swift */; };
+		65858CE46D9F7ED57E1D0EF948A1AC56 /* HeroCoreAnimationViewContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE80B5B7CEE8CC6AC954AF9EDC87006 /* HeroCoreAnimationViewContext.swift */; };
+		67C04D3CB7D0F8B5E255C6E4702EAB6C /* HeroStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D06718F811147D609B08ED9CFD510C /* HeroStringConvertible.swift */; };
+		6913F6CC524C0C872DB868D8E5D0AE7A /* HeroTransition+UIViewControllerTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA2005223340EA938B82E9D6D30577 /* HeroTransition+UIViewControllerTransitioningDelegate.swift */; };
+		6C004F5A1FAA0DF5F23465E08793A464 /* HeroModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A480F126B86721A37CB18A7FD18F5BBB /* HeroModifier.swift */; };
+		6C6B0014D75DEB7FA52A3C0B7607DE71 /* UIColor+HexString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AE4626839002E8F0CA7DEB0351C19C /* UIColor+HexString.swift */; };
+		6D268D7513384B45CABF1F91F6AB2A54 /* HeroTransition+CustomTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F5356DD4A9860261C41AD432AD71EC /* HeroTransition+CustomTransition.swift */; };
+		71193BF5EEB2F6A8663EAE65B38DA8BD /* HeroTransition+Start.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186210D9BF5D4F03245C2C55ED22B1BA /* HeroTransition+Start.swift */; };
+		7281DE987651950A7318A09DF2E24372 /* CG+Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA6F09A39D853C7D46A819A8F355004 /* CG+Hero.swift */; };
+		72B8E4F7D996DC27939C24B1F2979050 /* HeroTransitionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA26414D900F70A1F10E39BCB349066E /* HeroTransitionState.swift */; };
+		76C7AF1AFFB6B8F501B7C317CB8267A0 /* Pods-BasicUIComponents-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B415B06856CB226E80F4CD136379B3B4 /* Pods-BasicUIComponents-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A4BD208A1ADA3DED29A48D1884C3FD8 /* HeroPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EC6EEA8C33868F412BFB72C661B7D2 /* HeroPlugin.swift */; };
+		7B20370B4F50DAE25801E3D2CECEE4EE /* HeroTransition+Animate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764769E1A70CA77E6C545B4CDC2008AB /* HeroTransition+Animate.swift */; };
+		88B20356E23CBE86F045C102F134E70E /* HeroTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E90B1DB9022318D2C8F4C4843FCA50 /* HeroTypes.swift */; };
+		8B15A63206BA4D4BF7610B34767E44F1 /* HeroCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D77B7B5CE088BAC091D137C899585C2 /* HeroCompatible.swift */; };
+		8C02DB25E8B4AB8D32C214FDD87D0036 /* DefaultAnimationPreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3306329C70EB2E72F03CB684F03FDB /* DefaultAnimationPreprocessor.swift */; };
+		920F1920947C76839AF08A50BFFEEE68 /* HeroDefaultAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9665A10CAE0DCE2B5D79D7BB25D3E28D /* HeroDefaultAnimator.swift */; };
+		949F0A0B188D9E6BD51E98FBC85A5CEE /* ConditionalPreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570E5FC120761D15568C1A9A9B5B4BC /* ConditionalPreprocessor.swift */; };
+		9931D7F27562160A85E60EDD493AFE58 /* HeroDebugPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E09680BEECB6ED359E52FFF2610B78 /* HeroDebugPlugin.swift */; };
+		9A598F468DDF8EE38280C42D25C041EB /* Nodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD825FAE02BA8F3E0E1048212123F84 /* Nodes.swift */; };
+		9B320D5DBA6AC2F1AC191F128CDF757C /* UIKit+Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCF826C4044A6E5855BDB45B97FD6C4 /* UIKit+Hero.swift */; };
+		A327A2ED9C9432138D6955F8B0A16D33 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47C1F7D15DF1E2C8B980BC1B49D38419 /* CoreGraphics.framework */; };
+		A91BEEBFC32225594801B58F9771093F /* HeroTransition+UITabBarControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1680036E020247BA9E24A4771E27926A /* HeroTransition+UITabBarControllerDelegate.swift */; };
+		ABDFCA8BDEC56BB86B6F4D45BEBF85FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B4A357A9E84FBAC4505EFF2873D26B /* Foundation.framework */; };
+		B785A596F623450D4CD33C0C1B271995 /* HeroTargetState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BB5A718D416633B5A0C5B0ED765CBE /* HeroTargetState.swift */; };
+		BC69EB4B3E8CF10764DC844B51EE197F /* HeroDebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D47C8468E53A8F88B7A986211CA6E71 /* HeroDebugView.swift */; };
+		BD15BCF3D66ED66F5960860173087846 /* IgnoreSubviewModifiersPreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B8FC9278B90A29B72AEE6B2C26C08A /* IgnoreSubviewModifiersPreprocessor.swift */; };
+		C6E5D9AEEC1735A99CE166B6ADCB233A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B4A357A9E84FBAC4505EFF2873D26B /* Foundation.framework */; };
+		CB2FDFE3FF584711FDD886F72A047A31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B4A357A9E84FBAC4505EFF2873D26B /* Foundation.framework */; };
+		CF06DE9C8403867D3D6E94C7C9C4CE60 /* Pods-BasicUIComponents-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E39471AD3199E6659BB7CBBFB5889B4 /* Pods-BasicUIComponents-dummy.m */; };
+		CF7D20E7415AB9E45EA225CC45D271DF /* HeroModifier+Advanced.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F9682901DAB850956CF6760D51AE5C /* HeroModifier+Advanced.swift */; };
+		D0E4CB8767D190C3F33DA2C33A0259E5 /* MatchPreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E153695A56A15F4D097768AC4953F90 /* MatchPreprocessor.swift */; };
+		D2EC7E0F3B7433FDB0687651D9F8886F /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ECBBAAC9537D15751EA8392C3E4BE1 /* Parser.swift */; };
+		D3641C2A211205BFF4EFF31A4FD7B157 /* Pods-BasicUIComponentsTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 06B81A526420BBB14F6EE5F3E6F67378 /* Pods-BasicUIComponentsTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA9C90BFAEEC54AA49BF99201BECAE49 /* HeroAnimatorViewContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDC2F69E59F699D818484A748E62994 /* HeroAnimatorViewContext.swift */; };
+		DFCEF4119773B01B6687F843B041E617 /* Array+HeroModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E6988AFF104DE0A5B70B19568DD5C /* Array+HeroModifier.swift */; };
+		E8803B092DB99C9F66CBC0748F2CFA56 /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0A41AD81D11D32D1A93BA9941A90BA /* Regex.swift */; };
+		EAF7DC77ED4BAF2CA4107DDC6740CC0E /* HeroProgressRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116E6E8E9A43FE8169F0AB432EA6EA2A /* HeroProgressRunner.swift */; };
+		ED4FE4311465D22B9C4E7C2D920FE8DA /* HeroContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EDEAD4FFB8214A9B00C211BFBC2406 /* HeroContext.swift */; };
+		F1169703761EADA60A08EEFE95E64D8E /* Lexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6849B6FFBB657FCFF41ED5958D3738 /* Lexer.swift */; };
+		FB10926EC4C14B61466E4128D8188F8F /* HeroTransition+Interactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3830F2F563F4B3440BC1C820CA23FD6B /* HeroTransition+Interactive.swift */; };
+		FE027DE3BA18004EAB675CAFB5AF28ED /* UIViewController+Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839CE419183725F5151D21BD4D69F8EE /* UIViewController+Hero.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6504C14D138ED7CDD847F2727D3B9429 /* PBXContainerItemProxy */ = {
+		65C33AC9DAA9C0BC7D024B88648AC6A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3893AEA4D7DBB9A086E889FC469132D;
+			remoteInfo = Hero;
+		};
+		BE59F6B89ED971C80800118963331E9B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2B6AF44F9FBD5BE7026E8243E2227154;
 			remoteInfo = "Pods-BasicUIComponents";
 		};
+		C0E6C8353A12716ECAD000B02EF91F37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3893AEA4D7DBB9A086E889FC469132D;
+			remoteInfo = Hero;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03A3CE734EF0E1F6897D2CC9A3DF918E /* Pods-BasicUIComponents-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BasicUIComponents-acknowledgements.markdown"; sourceTree = "<group>"; };
-		07E6535F10258EA03C58315653D3239F /* Pods-BasicUIComponents-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BasicUIComponents-Info.plist"; sourceTree = "<group>"; };
-		09A5795FC576C17E010C6D0903B275BD /* Pods-BasicUIComponents-BasicUIComponentsUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BasicUIComponents-BasicUIComponentsUITests-umbrella.h"; sourceTree = "<group>"; };
-		1387287BC21177B16FAF87E094EA4CD7 /* Pods-BasicUIComponents-BasicUIComponentsUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BasicUIComponents-BasicUIComponentsUITests.modulemap"; sourceTree = "<group>"; };
-		1856E22E42F2F8C7E4DD502D3C7FCD12 /* Pods-BasicUIComponents-BasicUIComponentsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BasicUIComponents-BasicUIComponentsUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		280B50844E52B2CA53AD046093381538 /* Pods-BasicUIComponentsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BasicUIComponentsTests.debug.xcconfig"; sourceTree = "<group>"; };
-		2F294545F95A6FFFC90136CCF7E9A986 /* Pods-BasicUIComponents-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BasicUIComponents-umbrella.h"; sourceTree = "<group>"; };
+		06B81A526420BBB14F6EE5F3E6F67378 /* Pods-BasicUIComponentsTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BasicUIComponentsTests-umbrella.h"; sourceTree = "<group>"; };
+		0726882E1ED60A7624645EBFD24C2953 /* Pods-BasicUIComponentsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BasicUIComponentsTests.release.xcconfig"; sourceTree = "<group>"; };
+		0B87AC365247A4A2678DB5499E4D1D53 /* Hero.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Hero.modulemap; sourceTree = "<group>"; };
+		0E39471AD3199E6659BB7CBBFB5889B4 /* Pods-BasicUIComponents-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BasicUIComponents-dummy.m"; sourceTree = "<group>"; };
+		116E6E8E9A43FE8169F0AB432EA6EA2A /* HeroProgressRunner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroProgressRunner.swift; path = Sources/Transition/HeroProgressRunner.swift; sourceTree = "<group>"; };
+		120996084B4537267E713DEFA7BDBF3C /* Pods-BasicUIComponentsTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BasicUIComponentsTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		13E778F4B833EE5D7ABE882406A8215E /* Hero.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Hero.framework; path = Hero.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1680036E020247BA9E24A4771E27926A /* HeroTransition+UITabBarControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "HeroTransition+UITabBarControllerDelegate.swift"; path = "Sources/Transition/HeroTransition+UITabBarControllerDelegate.swift"; sourceTree = "<group>"; };
+		18551A24C7D3F36DCB7056A0848D55E0 /* Pods-BasicUIComponents-BasicUIComponentsUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BasicUIComponents-BasicUIComponentsUITests.modulemap"; sourceTree = "<group>"; };
+		186210D9BF5D4F03245C2C55ED22B1BA /* HeroTransition+Start.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "HeroTransition+Start.swift"; path = "Sources/Transition/HeroTransition+Start.swift"; sourceTree = "<group>"; };
+		1C0BD1553C42167B97609E03147FA9FD /* Pods-BasicUIComponents-BasicUIComponentsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BasicUIComponents-BasicUIComponentsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1D0DE1FCBF8BAA4333796284E645AC90 /* Pods-BasicUIComponents-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BasicUIComponents-frameworks.sh"; sourceTree = "<group>"; };
+		1F4E394EF34240B2953C1C891CD9F749 /* HeroTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroTransition.swift; path = Sources/Transition/HeroTransition.swift; sourceTree = "<group>"; };
+		25B6DC19D44793AD7B123137C97493D9 /* Pods-BasicUIComponentsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BasicUIComponentsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		25EDEAD4FFB8214A9B00C211BFBC2406 /* HeroContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroContext.swift; path = Sources/HeroContext.swift; sourceTree = "<group>"; };
+		28FD919A10138BB7DF8B46DC24C6AF4C /* HeroModifier+HeroStringConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "HeroModifier+HeroStringConvertible.swift"; path = "Sources/HeroModifier+HeroStringConvertible.swift"; sourceTree = "<group>"; };
+		29D35608583606E2C3EC7B5BD6B7F49A /* HeroTransition+UINavigationControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "HeroTransition+UINavigationControllerDelegate.swift"; path = "Sources/Transition/HeroTransition+UINavigationControllerDelegate.swift"; sourceTree = "<group>"; };
+		2D47C8468E53A8F88B7A986211CA6E71 /* HeroDebugView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroDebugView.swift; path = "Sources/Debug Plugin/HeroDebugView.swift"; sourceTree = "<group>"; };
+		2ECD4C2B01F26AAD2D6A246CC13A73D0 /* Pods-BasicUIComponents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BasicUIComponents.release.xcconfig"; sourceTree = "<group>"; };
+		30B539AED511B313CAE65CA85DE46ED2 /* Pods-BasicUIComponents-BasicUIComponentsUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BasicUIComponents-BasicUIComponentsUITests-frameworks.sh"; sourceTree = "<group>"; };
+		31DCBA147E4AE46CD41EA9FF93C301E5 /* Pods-BasicUIComponents-BasicUIComponentsUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BasicUIComponents-BasicUIComponentsUITests-umbrella.h"; sourceTree = "<group>"; };
+		3473B500A32B2D92091550F5E56ABC69 /* BasePreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BasePreprocessor.swift; path = Sources/Preprocessors/BasePreprocessor.swift; sourceTree = "<group>"; };
+		3830F2F563F4B3440BC1C820CA23FD6B /* HeroTransition+Interactive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "HeroTransition+Interactive.swift"; path = "Sources/Transition/HeroTransition+Interactive.swift"; sourceTree = "<group>"; };
 		39852A1DE6468D07E7AC8126BED68002 /* Pods_BasicUIComponentsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BasicUIComponentsTests.framework; path = "Pods-BasicUIComponentsTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3AFFC40D892417AC85E456BAA2AE3DC4 /* Pods-BasicUIComponentsTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BasicUIComponentsTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		41E784AA1165AADBFC366F7E08C7FF58 /* Pods-BasicUIComponentsTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BasicUIComponentsTests-umbrella.h"; sourceTree = "<group>"; };
-		49B4393F59BC0CCA448AE94981BE1F58 /* Pods-BasicUIComponents-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BasicUIComponents-dummy.m"; sourceTree = "<group>"; };
-		4BC6C2B2195AC6E4E99FBC7B37F89369 /* Pods-BasicUIComponentsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BasicUIComponentsTests.release.xcconfig"; sourceTree = "<group>"; };
-		4DD613F025FB4F1221C9A507039EA86C /* Pods-BasicUIComponentsTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BasicUIComponentsTests.modulemap"; sourceTree = "<group>"; };
+		3CD825FAE02BA8F3E0E1048212123F84 /* Nodes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Nodes.swift; path = Sources/Parser/Nodes.swift; sourceTree = "<group>"; };
+		40BB5A718D416633B5A0C5B0ED765CBE /* HeroTargetState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroTargetState.swift; path = Sources/HeroTargetState.swift; sourceTree = "<group>"; };
+		412AD888E35BB26AC6D47850596D4C1B /* Pods-BasicUIComponents-BasicUIComponentsUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BasicUIComponents-BasicUIComponentsUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		42AE4626839002E8F0CA7DEB0351C19C /* UIColor+HexString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+HexString.swift"; path = "Sources/Extensions/UIColor+HexString.swift"; sourceTree = "<group>"; };
+		43D06718F811147D609B08ED9CFD510C /* HeroStringConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroStringConvertible.swift; path = Sources/Parser/HeroStringConvertible.swift; sourceTree = "<group>"; };
+		44E09680BEECB6ED359E52FFF2610B78 /* HeroDebugPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroDebugPlugin.swift; path = "Sources/Debug Plugin/HeroDebugPlugin.swift"; sourceTree = "<group>"; };
+		44EB696AEF37B1D48A8CCC7846E580F5 /* Hero.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Hero.release.xcconfig; sourceTree = "<group>"; };
+		47C1F7D15DF1E2C8B980BC1B49D38419 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		495E6988AFF104DE0A5B70B19568DD5C /* Array+HeroModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+HeroModifier.swift"; path = "Sources/Extensions/Array+HeroModifier.swift"; sourceTree = "<group>"; };
+		514DF68E83E93E6FD071D4C60DB2845A /* Hero-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Hero-Info.plist"; sourceTree = "<group>"; };
+		52C0F1F2211B6619B3CA4F1F287F5CA9 /* Pods-BasicUIComponents-BasicUIComponentsUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BasicUIComponents-BasicUIComponentsUITests-dummy.m"; sourceTree = "<group>"; };
+		535B3DEEEE97F0F68F463CC53989852E /* Pods-BasicUIComponents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BasicUIComponents.debug.xcconfig"; sourceTree = "<group>"; };
+		59A5B49222941E4D900C2315228FB355 /* Pods-BasicUIComponents-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BasicUIComponents-acknowledgements.plist"; sourceTree = "<group>"; };
+		5CC94BE8B0514339DCD8B805CCF9E62E /* Pods-BasicUIComponentsTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BasicUIComponentsTests-dummy.m"; sourceTree = "<group>"; };
+		5E153695A56A15F4D097768AC4953F90 /* MatchPreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatchPreprocessor.swift; path = Sources/Preprocessors/MatchPreprocessor.swift; sourceTree = "<group>"; };
+		5FE9AC7CD2302F653813CA03B020885A /* Locale+Hero.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Locale+Hero.swift"; path = "Sources/Extensions/Locale+Hero.swift"; sourceTree = "<group>"; };
+		67D25BAA9593F70BF0A79D0849B4A9F9 /* Pods-BasicUIComponents-BasicUIComponentsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BasicUIComponents-BasicUIComponentsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6BA6F09A39D853C7D46A819A8F355004 /* CG+Hero.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CG+Hero.swift"; path = "Sources/Extensions/CG+Hero.swift"; sourceTree = "<group>"; };
+		6BE80B5B7CEE8CC6AC954AF9EDC87006 /* HeroCoreAnimationViewContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroCoreAnimationViewContext.swift; path = Sources/Animator/HeroCoreAnimationViewContext.swift; sourceTree = "<group>"; };
+		6C7A23CB7387A8BD8BBBA2349032414E /* Hero-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Hero-prefix.pch"; sourceTree = "<group>"; };
 		6EAC7D58DEB899806688F7B81B188C50 /* Pods_BasicUIComponents_BasicUIComponentsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BasicUIComponents_BasicUIComponentsUITests.framework; path = "Pods-BasicUIComponents-BasicUIComponentsUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7754424E9DB44056F0F96C720467C3A5 /* Pods-BasicUIComponents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BasicUIComponents.release.xcconfig"; sourceTree = "<group>"; };
-		998867E49E2F473F01881E08657DFBEC /* Pods-BasicUIComponents-BasicUIComponentsUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BasicUIComponents-BasicUIComponentsUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6F6849B6FFBB657FCFF41ED5958D3738 /* Lexer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Lexer.swift; path = Sources/Parser/Lexer.swift; sourceTree = "<group>"; };
+		75B8FC9278B90A29B72AEE6B2C26C08A /* IgnoreSubviewModifiersPreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IgnoreSubviewModifiersPreprocessor.swift; path = Sources/Preprocessors/IgnoreSubviewModifiersPreprocessor.swift; sourceTree = "<group>"; };
+		764769E1A70CA77E6C545B4CDC2008AB /* HeroTransition+Animate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "HeroTransition+Animate.swift"; path = "Sources/Transition/HeroTransition+Animate.swift"; sourceTree = "<group>"; };
+		79EA0B633D2336EC54A4EE21D29786B9 /* Pods-BasicUIComponentsTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BasicUIComponentsTests-Info.plist"; sourceTree = "<group>"; };
+		7CC876CA818409A56658030F26FA0F37 /* HeroViewControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroViewControllerDelegate.swift; path = Sources/HeroViewControllerDelegate.swift; sourceTree = "<group>"; };
+		7FDC2F69E59F699D818484A748E62994 /* HeroAnimatorViewContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroAnimatorViewContext.swift; path = Sources/Animator/HeroAnimatorViewContext.swift; sourceTree = "<group>"; };
+		839CE419183725F5151D21BD4D69F8EE /* UIViewController+Hero.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Hero.swift"; path = "Sources/Extensions/UIViewController+Hero.swift"; sourceTree = "<group>"; };
+		874B2374579C3A5FB2DE790374599F10 /* Pods-BasicUIComponentsTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BasicUIComponentsTests.modulemap"; sourceTree = "<group>"; };
+		8A3306329C70EB2E72F03CB684F03FDB /* DefaultAnimationPreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultAnimationPreprocessor.swift; path = Sources/Preprocessors/DefaultAnimationPreprocessor.swift; sourceTree = "<group>"; };
+		8F771E43330B7914C222B592B7F15711 /* Pods-BasicUIComponents-BasicUIComponentsUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BasicUIComponents-BasicUIComponentsUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		92DA2005223340EA938B82E9D6D30577 /* HeroTransition+UIViewControllerTransitioningDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "HeroTransition+UIViewControllerTransitioningDelegate.swift"; path = "Sources/Transition/HeroTransition+UIViewControllerTransitioningDelegate.swift"; sourceTree = "<group>"; };
+		936E3CE1667824D9A38E0C7F204D490C /* UIView+Hero.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Hero.swift"; path = "Sources/Extensions/UIView+Hero.swift"; sourceTree = "<group>"; };
+		95568154064CE960195D45B95A17D3E7 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
+		9665A10CAE0DCE2B5D79D7BB25D3E28D /* HeroDefaultAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroDefaultAnimator.swift; path = Sources/Animator/HeroDefaultAnimator.swift; sourceTree = "<group>"; };
+		9D77B7B5CE088BAC091D137C899585C2 /* HeroCompatible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroCompatible.swift; path = Sources/HeroCompatible.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A3AFC8C927BFAF1003B4B4944241FE4D /* Pods-BasicUIComponentsTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BasicUIComponentsTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A9BA574B830851AFA128D4A0C77D1E2E /* Pods-BasicUIComponents-BasicUIComponentsUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BasicUIComponents-BasicUIComponentsUITests-dummy.m"; sourceTree = "<group>"; };
-		AB92EC0FF88C7EB6040394071C52EEBA /* Pods-BasicUIComponentsTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BasicUIComponentsTests-dummy.m"; sourceTree = "<group>"; };
-		AECD5563AB5E77BD8CED9894DD17A37E /* Pods-BasicUIComponents.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BasicUIComponents.modulemap"; sourceTree = "<group>"; };
-		BEDC89A9E78CE818E3248098B9511234 /* Pods-BasicUIComponents-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BasicUIComponents-acknowledgements.plist"; sourceTree = "<group>"; };
-		E5448B16E4DB432EBB171B9819F1AD71 /* Pods-BasicUIComponents-BasicUIComponentsUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BasicUIComponents-BasicUIComponentsUITests-Info.plist"; sourceTree = "<group>"; };
-		E6CDAC69FD03DA05AA01D307A6733E16 /* Pods-BasicUIComponents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BasicUIComponents.debug.xcconfig"; sourceTree = "<group>"; };
+		9DF2128481F016D24960B5FEC0A58A3D /* HeroTransition+Complete.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "HeroTransition+Complete.swift"; path = "Sources/Transition/HeroTransition+Complete.swift"; sourceTree = "<group>"; };
+		9FCF826C4044A6E5855BDB45B97FD6C4 /* UIKit+Hero.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIKit+Hero.swift"; path = "Sources/Extensions/UIKit+Hero.swift"; sourceTree = "<group>"; };
+		A3E90B1DB9022318D2C8F4C4843FCA50 /* HeroTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroTypes.swift; path = Sources/HeroTypes.swift; sourceTree = "<group>"; };
+		A480F126B86721A37CB18A7FD18F5BBB /* HeroModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroModifier.swift; path = Sources/HeroModifier.swift; sourceTree = "<group>"; };
+		A640DAA292A8E3E1D3C34F25C2D716D1 /* SourcePreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SourcePreprocessor.swift; path = Sources/Preprocessors/SourcePreprocessor.swift; sourceTree = "<group>"; };
+		A6EC6EEA8C33868F412BFB72C661B7D2 /* HeroPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroPlugin.swift; path = Sources/HeroPlugin.swift; sourceTree = "<group>"; };
+		AA26414D900F70A1F10E39BCB349066E /* HeroTransitionState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroTransitionState.swift; path = Sources/Transition/HeroTransitionState.swift; sourceTree = "<group>"; };
+		AC77C49D2AD96C19F55BAA2870E24F80 /* CAMediaTimingFunction+Hero.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CAMediaTimingFunction+Hero.swift"; path = "Sources/Extensions/CAMediaTimingFunction+Hero.swift"; sourceTree = "<group>"; };
+		AF328D6DFA4B2DE9F33AB7FE01D17F29 /* DispatchQueue+Hero.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Hero.swift"; path = "Sources/Extensions/DispatchQueue+Hero.swift"; sourceTree = "<group>"; };
+		B21D76D27E27C94F70433CB61319E522 /* CALayer+Hero.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CALayer+Hero.swift"; path = "Sources/Extensions/CALayer+Hero.swift"; sourceTree = "<group>"; };
+		B2F5356DD4A9860261C41AD432AD71EC /* HeroTransition+CustomTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "HeroTransition+CustomTransition.swift"; path = "Sources/Transition/HeroTransition+CustomTransition.swift"; sourceTree = "<group>"; };
+		B415B06856CB226E80F4CD136379B3B4 /* Pods-BasicUIComponents-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BasicUIComponents-umbrella.h"; sourceTree = "<group>"; };
+		B570E5FC120761D15568C1A9A9B5B4BC /* ConditionalPreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConditionalPreprocessor.swift; path = Sources/Preprocessors/ConditionalPreprocessor.swift; sourceTree = "<group>"; };
+		C0C7148DF5C628FA9BF9B8433BB75E2A /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = Sources/SwiftSupport.swift; sourceTree = "<group>"; };
+		C2152E389D390484545054D8C7104DC0 /* Hero-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Hero-umbrella.h"; sourceTree = "<group>"; };
+		C2F9682901DAB850956CF6760D51AE5C /* HeroModifier+Advanced.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "HeroModifier+Advanced.swift"; path = "Sources/HeroModifier+Advanced.swift"; sourceTree = "<group>"; };
+		C6B4A357A9E84FBAC4505EFF2873D26B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C7ECBBAAC9537D15751EA8392C3E4BE1 /* Parser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parser.swift; path = Sources/Parser/Parser.swift; sourceTree = "<group>"; };
+		D1D608CC553A265F095DD435564AE0A9 /* Hero.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Hero.debug.xcconfig; sourceTree = "<group>"; };
+		D2DEF8139E6EEB34AB7105D9FF038093 /* CascadePreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CascadePreprocessor.swift; path = Sources/Preprocessors/CascadePreprocessor.swift; sourceTree = "<group>"; };
+		D51C5CF3EB3F62A2CAFABA0D8E8D9EC8 /* HeroViewPropertyViewContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroViewPropertyViewContext.swift; path = Sources/Animator/HeroViewPropertyViewContext.swift; sourceTree = "<group>"; };
+		D5226DC848D5183910F0BDCA44369141 /* Hero-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Hero-dummy.m"; sourceTree = "<group>"; };
+		E1649E4A20D586A3A884C9AF9BEFE9B1 /* Pods-BasicUIComponents.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BasicUIComponents.modulemap"; sourceTree = "<group>"; };
+		E86B7ACAE66DDF0E5C06D46DF28BE400 /* Pods-BasicUIComponents-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BasicUIComponents-Info.plist"; sourceTree = "<group>"; };
 		EA1FAD897E86C7C40B2F9CBC967065BF /* Pods_BasicUIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BasicUIComponents.framework; path = "Pods-BasicUIComponents.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F30CBA0B430879579F646BCF2A735FEB /* Pods-BasicUIComponents-BasicUIComponentsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BasicUIComponents-BasicUIComponentsUITests.release.xcconfig"; sourceTree = "<group>"; };
-		F909528F549063DD2A67EEFF8E0DA04A /* Pods-BasicUIComponents-BasicUIComponentsUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BasicUIComponents-BasicUIComponentsUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F933254927355F21BC9BCEFD044ED76C /* Pods-BasicUIComponentsTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BasicUIComponentsTests-Info.plist"; sourceTree = "<group>"; };
+		ECA4A69C9CB47B6F1BDF978A3CBA05C2 /* Pods-BasicUIComponents-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BasicUIComponents-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F63A0587E5962D2755154D39ED013925 /* Pods-BasicUIComponents-BasicUIComponentsUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BasicUIComponents-BasicUIComponentsUITests-Info.plist"; sourceTree = "<group>"; };
+		F6A09EA2804A0B1AC1A27858D6C5072A /* Pods-BasicUIComponentsTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BasicUIComponentsTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F8C830FF7C3F0EB792F7F0D41B08BE65 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		FAD9AC0426072933256DCBD071CD50BA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		FD0A41AD81D11D32D1A93BA9941A90BA /* Regex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Regex.swift; path = Sources/Parser/Regex.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		25DB00FE0071D65C4FA3657EB2045A40 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3AAC917005DAC6260E7DAF54041E33A5 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4BDC55901E0047F174EDD274B78C4FF6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7254C52553E07395D12C0E16F4C3D747 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8E2A1E336963C1C8ED5ED4A2077BC81C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -85,44 +202,202 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		951D50C3991B8BA50603A8C428CB3049 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6E5D9AEEC1735A99CE166B6ADCB233A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D3FE3537B772ABF01C2138BCF2A6400 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB2FDFE3FF584711FDD886F72A047A31 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC7E4C127E39C69B641065809FD55DFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A327A2ED9C9432138D6955F8B0A16D33 /* CoreGraphics.framework in Frameworks */,
+				022C443B103C1212789C2CD34B62660E /* CoreMedia.framework in Frameworks */,
+				4060F0F631FE2C10931BF78EC656009C /* Foundation.framework in Frameworks */,
+				52F1DFEC50925F25DAE919FAEFBFC00B /* QuartzCore.framework in Frameworks */,
+				34401EE6A3FF48CE7D4E0152208ECF93 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04CA60E0CAC42A50057670DA5D53CFBD /* Pods-BasicUIComponents-BasicUIComponentsUITests */ = {
+		0E607B8C21FA2BA40F9E59C754C98AD3 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				1387287BC21177B16FAF87E094EA4CD7 /* Pods-BasicUIComponents-BasicUIComponentsUITests.modulemap */,
-				F909528F549063DD2A67EEFF8E0DA04A /* Pods-BasicUIComponents-BasicUIComponentsUITests-acknowledgements.markdown */,
-				998867E49E2F473F01881E08657DFBEC /* Pods-BasicUIComponents-BasicUIComponentsUITests-acknowledgements.plist */,
-				A9BA574B830851AFA128D4A0C77D1E2E /* Pods-BasicUIComponents-BasicUIComponentsUITests-dummy.m */,
-				E5448B16E4DB432EBB171B9819F1AD71 /* Pods-BasicUIComponents-BasicUIComponentsUITests-Info.plist */,
-				09A5795FC576C17E010C6D0903B275BD /* Pods-BasicUIComponents-BasicUIComponentsUITests-umbrella.h */,
-				1856E22E42F2F8C7E4DD502D3C7FCD12 /* Pods-BasicUIComponents-BasicUIComponentsUITests.debug.xcconfig */,
-				F30CBA0B430879579F646BCF2A735FEB /* Pods-BasicUIComponents-BasicUIComponentsUITests.release.xcconfig */,
+				47C1F7D15DF1E2C8B980BC1B49D38419 /* CoreGraphics.framework */,
+				95568154064CE960195D45B95A17D3E7 /* CoreMedia.framework */,
+				C6B4A357A9E84FBAC4505EFF2873D26B /* Foundation.framework */,
+				F8C830FF7C3F0EB792F7F0D41B08BE65 /* QuartzCore.framework */,
+				FAD9AC0426072933256DCBD071CD50BA /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		14671E885643F7BC14E3448FF5CE68A2 /* Pods-BasicUIComponents-BasicUIComponentsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18551A24C7D3F36DCB7056A0848D55E0 /* Pods-BasicUIComponents-BasicUIComponentsUITests.modulemap */,
+				412AD888E35BB26AC6D47850596D4C1B /* Pods-BasicUIComponents-BasicUIComponentsUITests-acknowledgements.markdown */,
+				8F771E43330B7914C222B592B7F15711 /* Pods-BasicUIComponents-BasicUIComponentsUITests-acknowledgements.plist */,
+				52C0F1F2211B6619B3CA4F1F287F5CA9 /* Pods-BasicUIComponents-BasicUIComponentsUITests-dummy.m */,
+				30B539AED511B313CAE65CA85DE46ED2 /* Pods-BasicUIComponents-BasicUIComponentsUITests-frameworks.sh */,
+				F63A0587E5962D2755154D39ED013925 /* Pods-BasicUIComponents-BasicUIComponentsUITests-Info.plist */,
+				31DCBA147E4AE46CD41EA9FF93C301E5 /* Pods-BasicUIComponents-BasicUIComponentsUITests-umbrella.h */,
+				67D25BAA9593F70BF0A79D0849B4A9F9 /* Pods-BasicUIComponents-BasicUIComponentsUITests.debug.xcconfig */,
+				1C0BD1553C42167B97609E03147FA9FD /* Pods-BasicUIComponents-BasicUIComponentsUITests.release.xcconfig */,
 			);
 			name = "Pods-BasicUIComponents-BasicUIComponentsUITests";
 			path = "Target Support Files/Pods-BasicUIComponents-BasicUIComponentsUITests";
 			sourceTree = "<group>";
 		};
-		4237C033152D515D6346458A03473D88 /* Pods-BasicUIComponents */ = {
+		5321ECB23E282097B8C868B52110D6FA /* Pods-BasicUIComponentsTests */ = {
 			isa = PBXGroup;
 			children = (
-				AECD5563AB5E77BD8CED9894DD17A37E /* Pods-BasicUIComponents.modulemap */,
-				03A3CE734EF0E1F6897D2CC9A3DF918E /* Pods-BasicUIComponents-acknowledgements.markdown */,
-				BEDC89A9E78CE818E3248098B9511234 /* Pods-BasicUIComponents-acknowledgements.plist */,
-				49B4393F59BC0CCA448AE94981BE1F58 /* Pods-BasicUIComponents-dummy.m */,
-				07E6535F10258EA03C58315653D3239F /* Pods-BasicUIComponents-Info.plist */,
-				2F294545F95A6FFFC90136CCF7E9A986 /* Pods-BasicUIComponents-umbrella.h */,
-				E6CDAC69FD03DA05AA01D307A6733E16 /* Pods-BasicUIComponents.debug.xcconfig */,
-				7754424E9DB44056F0F96C720467C3A5 /* Pods-BasicUIComponents.release.xcconfig */,
+				874B2374579C3A5FB2DE790374599F10 /* Pods-BasicUIComponentsTests.modulemap */,
+				F6A09EA2804A0B1AC1A27858D6C5072A /* Pods-BasicUIComponentsTests-acknowledgements.markdown */,
+				120996084B4537267E713DEFA7BDBF3C /* Pods-BasicUIComponentsTests-acknowledgements.plist */,
+				5CC94BE8B0514339DCD8B805CCF9E62E /* Pods-BasicUIComponentsTests-dummy.m */,
+				79EA0B633D2336EC54A4EE21D29786B9 /* Pods-BasicUIComponentsTests-Info.plist */,
+				06B81A526420BBB14F6EE5F3E6F67378 /* Pods-BasicUIComponentsTests-umbrella.h */,
+				25B6DC19D44793AD7B123137C97493D9 /* Pods-BasicUIComponentsTests.debug.xcconfig */,
+				0726882E1ED60A7624645EBFD24C2953 /* Pods-BasicUIComponentsTests.release.xcconfig */,
+			);
+			name = "Pods-BasicUIComponentsTests";
+			path = "Target Support Files/Pods-BasicUIComponentsTests";
+			sourceTree = "<group>";
+		};
+		59E5466C707BD923DC6107B21FF9FBC7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6EAC0F4211396AEE915F289C7F37D274 /* Hero */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6EAC0F4211396AEE915F289C7F37D274 /* Hero */ = {
+			isa = PBXGroup;
+			children = (
+				495E6988AFF104DE0A5B70B19568DD5C /* Array+HeroModifier.swift */,
+				3473B500A32B2D92091550F5E56ABC69 /* BasePreprocessor.swift */,
+				B21D76D27E27C94F70433CB61319E522 /* CALayer+Hero.swift */,
+				AC77C49D2AD96C19F55BAA2870E24F80 /* CAMediaTimingFunction+Hero.swift */,
+				D2DEF8139E6EEB34AB7105D9FF038093 /* CascadePreprocessor.swift */,
+				6BA6F09A39D853C7D46A819A8F355004 /* CG+Hero.swift */,
+				B570E5FC120761D15568C1A9A9B5B4BC /* ConditionalPreprocessor.swift */,
+				8A3306329C70EB2E72F03CB684F03FDB /* DefaultAnimationPreprocessor.swift */,
+				AF328D6DFA4B2DE9F33AB7FE01D17F29 /* DispatchQueue+Hero.swift */,
+				7FDC2F69E59F699D818484A748E62994 /* HeroAnimatorViewContext.swift */,
+				9D77B7B5CE088BAC091D137C899585C2 /* HeroCompatible.swift */,
+				25EDEAD4FFB8214A9B00C211BFBC2406 /* HeroContext.swift */,
+				6BE80B5B7CEE8CC6AC954AF9EDC87006 /* HeroCoreAnimationViewContext.swift */,
+				44E09680BEECB6ED359E52FFF2610B78 /* HeroDebugPlugin.swift */,
+				2D47C8468E53A8F88B7A986211CA6E71 /* HeroDebugView.swift */,
+				9665A10CAE0DCE2B5D79D7BB25D3E28D /* HeroDefaultAnimator.swift */,
+				A480F126B86721A37CB18A7FD18F5BBB /* HeroModifier.swift */,
+				C2F9682901DAB850956CF6760D51AE5C /* HeroModifier+Advanced.swift */,
+				28FD919A10138BB7DF8B46DC24C6AF4C /* HeroModifier+HeroStringConvertible.swift */,
+				A6EC6EEA8C33868F412BFB72C661B7D2 /* HeroPlugin.swift */,
+				116E6E8E9A43FE8169F0AB432EA6EA2A /* HeroProgressRunner.swift */,
+				43D06718F811147D609B08ED9CFD510C /* HeroStringConvertible.swift */,
+				40BB5A718D416633B5A0C5B0ED765CBE /* HeroTargetState.swift */,
+				1F4E394EF34240B2953C1C891CD9F749 /* HeroTransition.swift */,
+				764769E1A70CA77E6C545B4CDC2008AB /* HeroTransition+Animate.swift */,
+				9DF2128481F016D24960B5FEC0A58A3D /* HeroTransition+Complete.swift */,
+				B2F5356DD4A9860261C41AD432AD71EC /* HeroTransition+CustomTransition.swift */,
+				3830F2F563F4B3440BC1C820CA23FD6B /* HeroTransition+Interactive.swift */,
+				186210D9BF5D4F03245C2C55ED22B1BA /* HeroTransition+Start.swift */,
+				29D35608583606E2C3EC7B5BD6B7F49A /* HeroTransition+UINavigationControllerDelegate.swift */,
+				1680036E020247BA9E24A4771E27926A /* HeroTransition+UITabBarControllerDelegate.swift */,
+				92DA2005223340EA938B82E9D6D30577 /* HeroTransition+UIViewControllerTransitioningDelegate.swift */,
+				AA26414D900F70A1F10E39BCB349066E /* HeroTransitionState.swift */,
+				A3E90B1DB9022318D2C8F4C4843FCA50 /* HeroTypes.swift */,
+				7CC876CA818409A56658030F26FA0F37 /* HeroViewControllerDelegate.swift */,
+				D51C5CF3EB3F62A2CAFABA0D8E8D9EC8 /* HeroViewPropertyViewContext.swift */,
+				75B8FC9278B90A29B72AEE6B2C26C08A /* IgnoreSubviewModifiersPreprocessor.swift */,
+				6F6849B6FFBB657FCFF41ED5958D3738 /* Lexer.swift */,
+				5FE9AC7CD2302F653813CA03B020885A /* Locale+Hero.swift */,
+				5E153695A56A15F4D097768AC4953F90 /* MatchPreprocessor.swift */,
+				3CD825FAE02BA8F3E0E1048212123F84 /* Nodes.swift */,
+				C7ECBBAAC9537D15751EA8392C3E4BE1 /* Parser.swift */,
+				FD0A41AD81D11D32D1A93BA9941A90BA /* Regex.swift */,
+				A640DAA292A8E3E1D3C34F25C2D716D1 /* SourcePreprocessor.swift */,
+				C0C7148DF5C628FA9BF9B8433BB75E2A /* SwiftSupport.swift */,
+				42AE4626839002E8F0CA7DEB0351C19C /* UIColor+HexString.swift */,
+				9FCF826C4044A6E5855BDB45B97FD6C4 /* UIKit+Hero.swift */,
+				936E3CE1667824D9A38E0C7F204D490C /* UIView+Hero.swift */,
+				839CE419183725F5151D21BD4D69F8EE /* UIViewController+Hero.swift */,
+				9E01FB50D1A04275273DBD09F5ED2C92 /* Support Files */,
+			);
+			name = Hero;
+			path = Hero;
+			sourceTree = "<group>";
+		};
+		860F30399BB6DF20D77D52DBD16AA838 /* Pods-BasicUIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				E1649E4A20D586A3A884C9AF9BEFE9B1 /* Pods-BasicUIComponents.modulemap */,
+				ECA4A69C9CB47B6F1BDF978A3CBA05C2 /* Pods-BasicUIComponents-acknowledgements.markdown */,
+				59A5B49222941E4D900C2315228FB355 /* Pods-BasicUIComponents-acknowledgements.plist */,
+				0E39471AD3199E6659BB7CBBFB5889B4 /* Pods-BasicUIComponents-dummy.m */,
+				1D0DE1FCBF8BAA4333796284E645AC90 /* Pods-BasicUIComponents-frameworks.sh */,
+				E86B7ACAE66DDF0E5C06D46DF28BE400 /* Pods-BasicUIComponents-Info.plist */,
+				B415B06856CB226E80F4CD136379B3B4 /* Pods-BasicUIComponents-umbrella.h */,
+				535B3DEEEE97F0F68F463CC53989852E /* Pods-BasicUIComponents.debug.xcconfig */,
+				2ECD4C2B01F26AAD2D6A246CC13A73D0 /* Pods-BasicUIComponents.release.xcconfig */,
 			);
 			name = "Pods-BasicUIComponents";
 			path = "Target Support Files/Pods-BasicUIComponents";
 			sourceTree = "<group>";
 		};
-		506B2832EB50E3B47A6DD2244FEDE3BD /* Products */ = {
+		9E01FB50D1A04275273DBD09F5ED2C92 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				0B87AC365247A4A2678DB5499E4D1D53 /* Hero.modulemap */,
+				D5226DC848D5183910F0BDCA44369141 /* Hero-dummy.m */,
+				514DF68E83E93E6FD071D4C60DB2845A /* Hero-Info.plist */,
+				6C7A23CB7387A8BD8BBBA2349032414E /* Hero-prefix.pch */,
+				C2152E389D390484545054D8C7104DC0 /* Hero-umbrella.h */,
+				D1D608CC553A265F095DD435564AE0A9 /* Hero.debug.xcconfig */,
+				44EB696AEF37B1D48A8CCC7846E580F5 /* Hero.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Hero";
+			sourceTree = "<group>";
+		};
+		B94D7768568A9992200DB461E8CF687F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E607B8C21FA2BA40F9E59C754C98AD3 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B97D1480A18E6E4573F84BD5E8509D1F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				860F30399BB6DF20D77D52DBD16AA838 /* Pods-BasicUIComponents */,
+				14671E885643F7BC14E3448FF5CE68A2 /* Pods-BasicUIComponents-BasicUIComponentsUITests */,
+				5321ECB23E282097B8C868B52110D6FA /* Pods-BasicUIComponentsTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C9026075FFADB911266D0E95AE4F99BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13E778F4B833EE5D7ABE882406A8215E /* Hero.framework */,
 				EA1FAD897E86C7C40B2F9CBC967065BF /* Pods_BasicUIComponents.framework */,
 				6EAC7D58DEB899806688F7B81B188C50 /* Pods_BasicUIComponents_BasicUIComponentsUITests.framework */,
 				39852A1DE6468D07E7AC8126BED68002 /* Pods_BasicUIComponentsTests.framework */,
@@ -130,74 +405,25 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		980759B3F664FC4A06EFE3F9A54316D0 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				4237C033152D515D6346458A03473D88 /* Pods-BasicUIComponents */,
-				04CA60E0CAC42A50057670DA5D53CFBD /* Pods-BasicUIComponents-BasicUIComponentsUITests */,
-				C1FCE5B84352608C61694CDDDC231C93 /* Pods-BasicUIComponentsTests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		C1FCE5B84352608C61694CDDDC231C93 /* Pods-BasicUIComponentsTests */ = {
-			isa = PBXGroup;
-			children = (
-				4DD613F025FB4F1221C9A507039EA86C /* Pods-BasicUIComponentsTests.modulemap */,
-				A3AFC8C927BFAF1003B4B4944241FE4D /* Pods-BasicUIComponentsTests-acknowledgements.markdown */,
-				3AFFC40D892417AC85E456BAA2AE3DC4 /* Pods-BasicUIComponentsTests-acknowledgements.plist */,
-				AB92EC0FF88C7EB6040394071C52EEBA /* Pods-BasicUIComponentsTests-dummy.m */,
-				F933254927355F21BC9BCEFD044ED76C /* Pods-BasicUIComponentsTests-Info.plist */,
-				41E784AA1165AADBFC366F7E08C7FF58 /* Pods-BasicUIComponentsTests-umbrella.h */,
-				280B50844E52B2CA53AD046093381538 /* Pods-BasicUIComponentsTests.debug.xcconfig */,
-				4BC6C2B2195AC6E4E99FBC7B37F89369 /* Pods-BasicUIComponentsTests.release.xcconfig */,
-			);
-			name = "Pods-BasicUIComponentsTests";
-			path = "Target Support Files/Pods-BasicUIComponentsTests";
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				506B2832EB50E3B47A6DD2244FEDE3BD /* Products */,
-				980759B3F664FC4A06EFE3F9A54316D0 /* Targets Support Files */,
+				B94D7768568A9992200DB461E8CF687F /* Frameworks */,
+				59E5466C707BD923DC6107B21FF9FBC7 /* Pods */,
+				C9026075FFADB911266D0E95AE4F99BE /* Products */,
+				B97D1480A18E6E4573F84BD5E8509D1F /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				578452D2E740E91742655AC8F1636D1F /* iOS */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5AF5E93EA4EFD8C68BACFAF445CC4CAD /* Headers */ = {
+		950B293240DE5ED0836DE4D08C8035E4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4439FBED39C5CCDE70C0B15DC0C88728 /* Pods-BasicUIComponents-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9218A1CC04082773DC9B3C20BD926FDF /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CE4C29C95D3D2A2431C76965789BFA9B /* Pods-BasicUIComponents-BasicUIComponentsUITests-umbrella.h in Headers */,
+				5A5E383191845E68FB09FDA1FEFD1CDE /* Pods-BasicUIComponents-BasicUIComponentsUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +432,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3641C2A211205BFF4EFF31A4FD7B157 /* Pods-BasicUIComponentsTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E542A779A5CF84E402C6E8E05D301619 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F7F8AE43DF1AB79674EB6510C6E44E5 /* Hero-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E85777083E4148A32EDE3B728FC96BCD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76C7AF1AFFB6B8F501B7C317CB8267A0 /* Pods-BasicUIComponents-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,7 +466,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				BFE4A0C88EFDD664305EAC1289D8AAF5 /* PBXTargetDependency */,
+				0384DCF64033DA495907DE31ED7B79FB /* PBXTargetDependency */,
 			);
 			name = "Pods-BasicUIComponentsTests";
 			productName = "Pods-BasicUIComponentsTests";
@@ -233,34 +475,54 @@
 		};
 		2B6AF44F9FBD5BE7026E8243E2227154 /* Pods-BasicUIComponents */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0521304753DCFEFD77AD45F027D278AD /* Build configuration list for PBXNativeTarget "Pods-BasicUIComponents" */;
+			buildConfigurationList = 3972B1A2293B779A40D742B4C99CB72D /* Build configuration list for PBXNativeTarget "Pods-BasicUIComponents" */;
 			buildPhases = (
-				5AF5E93EA4EFD8C68BACFAF445CC4CAD /* Headers */,
-				7A19FCDB97901FF9DB6CD3BFF0882AD3 /* Sources */,
-				25DB00FE0071D65C4FA3657EB2045A40 /* Frameworks */,
-				0F17DA70CBDD5B2EB027EF6095444A2A /* Resources */,
+				E85777083E4148A32EDE3B728FC96BCD /* Headers */,
+				3CADCFFAD3995EDB1B592C23A11C66AE /* Sources */,
+				951D50C3991B8BA50603A8C428CB3049 /* Frameworks */,
+				DF07BD52CF869BB70E666AAF2050E046 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CE51B78E788B3EDAEBB3003C094645A4 /* PBXTargetDependency */,
 			);
 			name = "Pods-BasicUIComponents";
 			productName = "Pods-BasicUIComponents";
 			productReference = EA1FAD897E86C7C40B2F9CBC967065BF /* Pods_BasicUIComponents.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B8CD1F413386E114A8FBD73D247EF938 /* Pods-BasicUIComponents-BasicUIComponentsUITests */ = {
+		B3893AEA4D7DBB9A086E889FC469132D /* Hero */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 33220485EF674E67751BFF02289D9B35 /* Build configuration list for PBXNativeTarget "Pods-BasicUIComponents-BasicUIComponentsUITests" */;
+			buildConfigurationList = B48FD803474F197A141870B2A427A1D0 /* Build configuration list for PBXNativeTarget "Hero" */;
 			buildPhases = (
-				9218A1CC04082773DC9B3C20BD926FDF /* Headers */,
-				8983A3434448E542922C23E84C2FAF9B /* Sources */,
-				4BDC55901E0047F174EDD274B78C4FF6 /* Frameworks */,
-				762871D60B1FD125334180793E603D64 /* Resources */,
+				E542A779A5CF84E402C6E8E05D301619 /* Headers */,
+				2EBCDDBB3DB759C34B8F8A066ADDA700 /* Sources */,
+				AC7E4C127E39C69B641065809FD55DFF /* Frameworks */,
+				0953330A81F88A15FF8EC873F28472DF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			name = Hero;
+			productName = Hero;
+			productReference = 13E778F4B833EE5D7ABE882406A8215E /* Hero.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B8CD1F413386E114A8FBD73D247EF938 /* Pods-BasicUIComponents-BasicUIComponentsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE5E3D2563CF2E4BAB276CB521F89447 /* Build configuration list for PBXNativeTarget "Pods-BasicUIComponents-BasicUIComponentsUITests" */;
+			buildPhases = (
+				950B293240DE5ED0836DE4D08C8035E4 /* Headers */,
+				303D073A7B1004799EA18CA33874D106 /* Sources */,
+				9D3FE3537B772ABF01C2138BCF2A6400 /* Frameworks */,
+				49CB08A87FC6A0F1EEBF0C712C9A280F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				381846649F163A91D90A27A8C3DED2B4 /* PBXTargetDependency */,
 			);
 			name = "Pods-BasicUIComponents-BasicUIComponentsUITests";
 			productName = "Pods-BasicUIComponents-BasicUIComponentsUITests";
@@ -285,10 +547,11 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 506B2832EB50E3B47A6DD2244FEDE3BD /* Products */;
+			productRefGroup = C9026075FFADB911266D0E95AE4F99BE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				B3893AEA4D7DBB9A086E889FC469132D /* Hero */,
 				2B6AF44F9FBD5BE7026E8243E2227154 /* Pods-BasicUIComponents */,
 				B8CD1F413386E114A8FBD73D247EF938 /* Pods-BasicUIComponents-BasicUIComponentsUITests */,
 				0227CA4283CA35CAF4DE320714019EF1 /* Pods-BasicUIComponentsTests */,
@@ -297,14 +560,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0F17DA70CBDD5B2EB027EF6095444A2A /* Resources */ = {
+		0953330A81F88A15FF8EC873F28472DF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		762871D60B1FD125334180793E603D64 /* Resources */ = {
+		49CB08A87FC6A0F1EEBF0C712C9A280F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -318,9 +581,89 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DF07BD52CF869BB70E666AAF2050E046 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2EBCDDBB3DB759C34B8F8A066ADDA700 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFCEF4119773B01B6687F843B041E617 /* Array+HeroModifier.swift in Sources */,
+				367E21EEFB329A9FD356A6185D082603 /* BasePreprocessor.swift in Sources */,
+				32B5846E4ADF469791BF1B7F9A1CAC5E /* CALayer+Hero.swift in Sources */,
+				085AFCB4D71063724F278021DA822198 /* CAMediaTimingFunction+Hero.swift in Sources */,
+				36F163200D6A41005B555B38013A214A /* CascadePreprocessor.swift in Sources */,
+				7281DE987651950A7318A09DF2E24372 /* CG+Hero.swift in Sources */,
+				949F0A0B188D9E6BD51E98FBC85A5CEE /* ConditionalPreprocessor.swift in Sources */,
+				8C02DB25E8B4AB8D32C214FDD87D0036 /* DefaultAnimationPreprocessor.swift in Sources */,
+				0DDD24DFD337E152787B013BA4DCCD23 /* DispatchQueue+Hero.swift in Sources */,
+				0B3A9B0F3496EEA3E2E0DE59E6DB49DC /* Hero-dummy.m in Sources */,
+				DA9C90BFAEEC54AA49BF99201BECAE49 /* HeroAnimatorViewContext.swift in Sources */,
+				8B15A63206BA4D4BF7610B34767E44F1 /* HeroCompatible.swift in Sources */,
+				ED4FE4311465D22B9C4E7C2D920FE8DA /* HeroContext.swift in Sources */,
+				65858CE46D9F7ED57E1D0EF948A1AC56 /* HeroCoreAnimationViewContext.swift in Sources */,
+				9931D7F27562160A85E60EDD493AFE58 /* HeroDebugPlugin.swift in Sources */,
+				BC69EB4B3E8CF10764DC844B51EE197F /* HeroDebugView.swift in Sources */,
+				920F1920947C76839AF08A50BFFEEE68 /* HeroDefaultAnimator.swift in Sources */,
+				CF7D20E7415AB9E45EA225CC45D271DF /* HeroModifier+Advanced.swift in Sources */,
+				0F3D8947B1E6926316A24BE91FEA2CF8 /* HeroModifier+HeroStringConvertible.swift in Sources */,
+				6C004F5A1FAA0DF5F23465E08793A464 /* HeroModifier.swift in Sources */,
+				7A4BD208A1ADA3DED29A48D1884C3FD8 /* HeroPlugin.swift in Sources */,
+				EAF7DC77ED4BAF2CA4107DDC6740CC0E /* HeroProgressRunner.swift in Sources */,
+				67C04D3CB7D0F8B5E255C6E4702EAB6C /* HeroStringConvertible.swift in Sources */,
+				B785A596F623450D4CD33C0C1B271995 /* HeroTargetState.swift in Sources */,
+				7B20370B4F50DAE25801E3D2CECEE4EE /* HeroTransition+Animate.swift in Sources */,
+				507BA0125ABD719B27A9CA86184465CD /* HeroTransition+Complete.swift in Sources */,
+				6D268D7513384B45CABF1F91F6AB2A54 /* HeroTransition+CustomTransition.swift in Sources */,
+				FB10926EC4C14B61466E4128D8188F8F /* HeroTransition+Interactive.swift in Sources */,
+				71193BF5EEB2F6A8663EAE65B38DA8BD /* HeroTransition+Start.swift in Sources */,
+				32C3EA12C84BD849278FD9BF7C494500 /* HeroTransition+UINavigationControllerDelegate.swift in Sources */,
+				A91BEEBFC32225594801B58F9771093F /* HeroTransition+UITabBarControllerDelegate.swift in Sources */,
+				6913F6CC524C0C872DB868D8E5D0AE7A /* HeroTransition+UIViewControllerTransitioningDelegate.swift in Sources */,
+				2505D7C1BD283BA7A830422E794ED894 /* HeroTransition.swift in Sources */,
+				72B8E4F7D996DC27939C24B1F2979050 /* HeroTransitionState.swift in Sources */,
+				88B20356E23CBE86F045C102F134E70E /* HeroTypes.swift in Sources */,
+				5ED12CA47F6B502F4CAD49243ED32071 /* HeroViewControllerDelegate.swift in Sources */,
+				2F3427251D6056AA646ADED026182ADB /* HeroViewPropertyViewContext.swift in Sources */,
+				BD15BCF3D66ED66F5960860173087846 /* IgnoreSubviewModifiersPreprocessor.swift in Sources */,
+				F1169703761EADA60A08EEFE95E64D8E /* Lexer.swift in Sources */,
+				3955A815007C657E4F5C73F4AA8D17DA /* Locale+Hero.swift in Sources */,
+				D0E4CB8767D190C3F33DA2C33A0259E5 /* MatchPreprocessor.swift in Sources */,
+				9A598F468DDF8EE38280C42D25C041EB /* Nodes.swift in Sources */,
+				D2EC7E0F3B7433FDB0687651D9F8886F /* Parser.swift in Sources */,
+				E8803B092DB99C9F66CBC0748F2CFA56 /* Regex.swift in Sources */,
+				305A936F60547735F12FDD914EF1353A /* SourcePreprocessor.swift in Sources */,
+				2253F9883DE686852CC6DA6E3EFAF08B /* SwiftSupport.swift in Sources */,
+				6C6B0014D75DEB7FA52A3C0B7607DE71 /* UIColor+HexString.swift in Sources */,
+				9B320D5DBA6AC2F1AC191F128CDF757C /* UIKit+Hero.swift in Sources */,
+				397098FDB2057B6D501A3876652017F6 /* UIView+Hero.swift in Sources */,
+				FE027DE3BA18004EAB675CAFB5AF28ED /* UIViewController+Hero.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		303D073A7B1004799EA18CA33874D106 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46D70D2D41573BDE3CA01E760CFA56B1 /* Pods-BasicUIComponents-BasicUIComponentsUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CADCFFAD3995EDB1B592C23A11C66AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF06DE9C8403867D3D6E94C7C9C4CE60 /* Pods-BasicUIComponents-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6031BB16D42B82BD653E8053215C93C9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -329,151 +672,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7A19FCDB97901FF9DB6CD3BFF0882AD3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				585A234196BA817085C0E86EE302B93C /* Pods-BasicUIComponents-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8983A3434448E542922C23E84C2FAF9B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E33318299173F1DCB0AE26C2A328CE88 /* Pods-BasicUIComponents-BasicUIComponentsUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BFE4A0C88EFDD664305EAC1289D8AAF5 /* PBXTargetDependency */ = {
+		0384DCF64033DA495907DE31ED7B79FB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-BasicUIComponents";
 			target = 2B6AF44F9FBD5BE7026E8243E2227154 /* Pods-BasicUIComponents */;
-			targetProxy = 6504C14D138ED7CDD847F2727D3B9429 /* PBXContainerItemProxy */;
+			targetProxy = BE59F6B89ED971C80800118963331E9B /* PBXContainerItemProxy */;
+		};
+		381846649F163A91D90A27A8C3DED2B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Hero;
+			target = B3893AEA4D7DBB9A086E889FC469132D /* Hero */;
+			targetProxy = 65C33AC9DAA9C0BC7D024B88648AC6A9 /* PBXContainerItemProxy */;
+		};
+		CE51B78E788B3EDAEBB3003C094645A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Hero;
+			target = B3893AEA4D7DBB9A086E889FC469132D /* Hero */;
+			targetProxy = C0E6C8353A12716ECAD000B02EF91F37 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		3956296ED70AB7B960CF8260455ED9C1 /* Release */ = {
+		01F876A92550064AD8029154B0CD70D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4BC6C2B2195AC6E4E99FBC7B37F89369 /* Pods-BasicUIComponentsTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-BasicUIComponentsTests/Pods-BasicUIComponentsTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BasicUIComponentsTests/Pods-BasicUIComponentsTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		410C38A5C7E4580F28BF31762514956B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F30CBA0B430879579F646BCF2A735FEB /* Pods-BasicUIComponents-BasicUIComponentsUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-BasicUIComponents-BasicUIComponentsUITests/Pods-BasicUIComponents-BasicUIComponentsUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BasicUIComponents-BasicUIComponentsUITests/Pods-BasicUIComponents-BasicUIComponentsUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4E38839E16A3045CEA55C805C9F0C40D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7754424E9DB44056F0F96C720467C3A5 /* Pods-BasicUIComponents.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-BasicUIComponents/Pods-BasicUIComponents-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BasicUIComponents/Pods-BasicUIComponents.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		58D87F8287C0A432BA726EC2329A26E8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1856E22E42F2F8C7E4DD502D3C7FCD12 /* Pods-BasicUIComponents-BasicUIComponentsUITests.debug.xcconfig */;
+			baseConfigurationReference = 67D25BAA9593F70BF0A79D0849B4A9F9 /* Pods-BasicUIComponents-BasicUIComponentsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -508,9 +733,118 @@
 			};
 			name = Debug;
 		};
-		97002837831A824CE5A3FB81B66AB761 /* Debug */ = {
+		05971269B61F0103CE2BA1BA78D44F4C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 280B50844E52B2CA53AD046093381538 /* Pods-BasicUIComponentsTests.debug.xcconfig */;
+			baseConfigurationReference = 1C0BD1553C42167B97609E03147FA9FD /* Pods-BasicUIComponents-BasicUIComponentsUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BasicUIComponents-BasicUIComponentsUITests/Pods-BasicUIComponents-BasicUIComponentsUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BasicUIComponents-BasicUIComponentsUITests/Pods-BasicUIComponents-BasicUIComponentsUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2CF44EEA893EC4662273A2EA4F64F14B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1D608CC553A265F095DD435564AE0A9 /* Hero.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Hero/Hero-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Hero/Hero-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Hero/Hero.modulemap";
+				PRODUCT_MODULE_NAME = Hero;
+				PRODUCT_NAME = Hero;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		365A950A32B6B146826FB712E17BE578 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44EB696AEF37B1D48A8CCC7846E580F5 /* Hero.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Hero/Hero-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Hero/Hero-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Hero/Hero.modulemap";
+				PRODUCT_MODULE_NAME = Hero;
+				PRODUCT_NAME = Hero;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3956296ED70AB7B960CF8260455ED9C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0726882E1ED60A7624645EBFD24C2953 /* Pods-BasicUIComponentsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -532,6 +866,81 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-BasicUIComponentsTests/Pods-BasicUIComponentsTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		97002837831A824CE5A3FB81B66AB761 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25B6DC19D44793AD7B123137C97493D9 /* Pods-BasicUIComponentsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BasicUIComponentsTests/Pods-BasicUIComponentsTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BasicUIComponentsTests/Pods-BasicUIComponentsTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AF5C7ACE505D2FF8BFD402AADBF95E10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 535B3DEEEE97F0F68F463CC53989852E /* Pods-BasicUIComponents.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BasicUIComponents/Pods-BasicUIComponents-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BasicUIComponents/Pods-BasicUIComponents.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -673,9 +1082,9 @@
 			};
 			name = Release;
 		};
-		DF0675F6F39E28257046406F5DB20D67 /* Debug */ = {
+		F88D05CC62152E5FFF4415E8233CFB92 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E6CDAC69FD03DA05AA01D307A6733E16 /* Pods-BasicUIComponents.debug.xcconfig */;
+			baseConfigurationReference = 2ECD4C2B01F26AAD2D6A246CC13A73D0 /* Pods-BasicUIComponents.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -705,32 +1114,15 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0521304753DCFEFD77AD45F027D278AD /* Build configuration list for PBXNativeTarget "Pods-BasicUIComponents" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DF0675F6F39E28257046406F5DB20D67 /* Debug */,
-				4E38839E16A3045CEA55C805C9F0C40D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		33220485EF674E67751BFF02289D9B35 /* Build configuration list for PBXNativeTarget "Pods-BasicUIComponents-BasicUIComponentsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				58D87F8287C0A432BA726EC2329A26E8 /* Debug */,
-				410C38A5C7E4580F28BF31762514956B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		371F9419500CC18C0A2AC0E30A062C18 /* Build configuration list for PBXNativeTarget "Pods-BasicUIComponentsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -740,11 +1132,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		3972B1A2293B779A40D742B4C99CB72D /* Build configuration list for PBXNativeTarget "Pods-BasicUIComponents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF5C7ACE505D2FF8BFD402AADBF95E10 /* Debug */,
+				F88D05CC62152E5FFF4415E8233CFB92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BC01E0B73776AF6B58DC318A9BE988D7 /* Debug */,
 				C605C363CC9F26F9FF97DBB1D5C6E25C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B48FD803474F197A141870B2A427A1D0 /* Build configuration list for PBXNativeTarget "Hero" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CF44EEA893EC4662273A2EA4F64F14B /* Debug */,
+				365A950A32B6B146826FB712E17BE578 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE5E3D2563CF2E4BAB276CB521F89447 /* Build configuration list for PBXNativeTarget "Pods-BasicUIComponents-BasicUIComponentsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01F876A92550064AD8029154B0CD70D5 /* Debug */,
+				05971269B61F0103CE2BA1BA78D44F4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

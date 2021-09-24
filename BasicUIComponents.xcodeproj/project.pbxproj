@@ -42,6 +42,7 @@
 		23E507A826EDE7AB00596FFF /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E507A726EDE7AB00596FFF /* DetailTableViewController.swift */; };
 		3CE3334820FFFEE3DDC40478 /* Pods_BasicUIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A69D87B716563C9AFAE033D5 /* Pods_BasicUIComponents.framework */; };
 		49F3BC48181FC5C3B8253869 /* Pods_BasicUIComponentsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F57A09C56A1D516050E769A6 /* Pods_BasicUIComponentsTests.framework */; };
+		50BE60D026FE8326003347BA /* HeroDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BE60CF26FE8326003347BA /* HeroDetailViewController.swift */; };
 		844B97D25D38BA508D226CD5 /* Pods_BasicUIComponents_BasicUIComponentsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E7823DBD8440F9D6C91F45 /* Pods_BasicUIComponents_BasicUIComponentsUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -105,6 +106,7 @@
 		23E507A526EDE65900596FFF /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		23E507A726EDE7AB00596FFF /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 		2BF0B027E7BDA91E31AD673B /* Pods-BasicUIComponents-BasicUIComponentsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicUIComponents-BasicUIComponentsUITests.release.xcconfig"; path = "Target Support Files/Pods-BasicUIComponents-BasicUIComponentsUITests/Pods-BasicUIComponents-BasicUIComponentsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		50BE60CF26FE8326003347BA /* HeroDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailViewController.swift; sourceTree = "<group>"; };
 		60B7DEBC2A4E4D398D96DDA2 /* Pods-BasicUIComponentsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicUIComponentsTests.debug.xcconfig"; path = "Target Support Files/Pods-BasicUIComponentsTests/Pods-BasicUIComponentsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7FE3DD153E9AB7D6EE18F3FD /* Pods-BasicUIComponents-BasicUIComponentsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicUIComponents-BasicUIComponentsUITests.debug.xcconfig"; path = "Target Support Files/Pods-BasicUIComponents-BasicUIComponentsUITests/Pods-BasicUIComponents-BasicUIComponentsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		84E7823DBD8440F9D6C91F45 /* Pods_BasicUIComponents_BasicUIComponentsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasicUIComponents_BasicUIComponentsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -204,6 +206,7 @@
 				235C707C26EC900400D7B5BB /* ButtonViewController.swift */,
 				23E5078B26ECB48900596FFF /* CalculatorViewController.swift */,
 				23E5078D26ECC2B500596FFF /* ScrollViewController.swift */,
+				50BE60CF26FE8326003347BA /* HeroDetailViewController.swift */,
 				23E507A726EDE7AB00596FFF /* DetailTableViewController.swift */,
 				2319175026EE11E700617A9E /* DetailCollectionViewController.swift */,
 				2319175426EE1FCB00617A9E /* NavigationExampleViewController.swift */,
@@ -305,6 +308,7 @@
 				23A2AA7126E4D504009310F0 /* Sources */,
 				23A2AA7226E4D504009310F0 /* Frameworks */,
 				23A2AA7326E4D504009310F0 /* Resources */,
+				E545189E84E15E33357D01CB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -345,6 +349,7 @@
 				23A2AA9226E4D507009310F0 /* Sources */,
 				23A2AA9326E4D507009310F0 /* Frameworks */,
 				23A2AA9426E4D507009310F0 /* Resources */,
+				761774813FACF56A1D934DDD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -430,6 +435,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		761774813FACF56A1D934DDD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BasicUIComponents-BasicUIComponentsUITests/Pods-BasicUIComponents-BasicUIComponentsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BasicUIComponents-BasicUIComponentsUITests/Pods-BasicUIComponents-BasicUIComponentsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BasicUIComponents-BasicUIComponentsUITests/Pods-BasicUIComponents-BasicUIComponentsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E545189E84E15E33357D01CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BasicUIComponents/Pods-BasicUIComponents-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BasicUIComponents/Pods-BasicUIComponents-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BasicUIComponents/Pods-BasicUIComponents-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		EBB037D047850312896C3B68 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -526,6 +565,7 @@
 				23E507A626EDE65900596FFF /* HomeTableViewController.swift in Sources */,
 				23E5078C26ECB48900596FFF /* CalculatorViewController.swift in Sources */,
 				23A2AA7B26E4D504009310F0 /* SceneDelegate.swift in Sources */,
+				50BE60D026FE8326003347BA /* HeroDetailViewController.swift in Sources */,
 				232D1B2426F6004600196177 /* TabBarContainerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

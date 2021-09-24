@@ -16,5 +16,6 @@ target 'BasicUIComponents' do
   target 'BasicUIComponentsUITests' do
     # Pods for testing
   end
+pod 'Hero'
 
 end
